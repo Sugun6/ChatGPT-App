@@ -60,7 +60,7 @@ class ImageGenerator : AppCompatActivity() {
         val requestBody = RequestBody.create(JSON, jsonBody.toString())
         val request = Request.Builder()
             .url("https://api.openai.com/v1/images/generations")
-            .header("Authorization", "Bearer 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")
+            .header("Authorization", "Bearer YOUR_API_KEY")
             .post(requestBody)
             .build()
 
